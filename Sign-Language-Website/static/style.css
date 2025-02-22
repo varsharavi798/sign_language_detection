@@ -1,0 +1,96 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('/static/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header Styling */
+header {
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Footer Styling */
+footer {
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+
+/* Main Content Box */
+.content {
+    margin: 100px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    width: 80%;
+    text-align: center;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Buttons */
+button {
+    background-color: #ff6a00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #e65c00;
+    transform: scale(1.1);
+}
+
+/* Links */
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* Background for Login Page */
+.login-page {
+    background: url('/static/loginbg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Background for Welcome Page */
+.welcome-page {
+    background: url('/static/welbg1.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Background for Project Page */
+.project-page {
+    background: url('static/colorful-hands.jpg') no-repeat center center fixed;
+    background-size: cover;
+}

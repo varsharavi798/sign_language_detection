@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body.welcome-page {
+            margin: 0;
+            padding: 0;
+            background: url('/static/images/welcome_bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #003300; /* Dark green text for better contrast */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Light shadow for readability */
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for clarity */
+        }
+        .btn {
+            background-color: #ff6a00;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #e65c00;
+            transform: scale(1.1);
+        }
+        footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 1.2em;
+            color: #003300;
+        }
+    </style>
+</head>
+<body class="welcome-page">
+    <h1>You Can Hear with Your Ears, I Can Hear with My Eyes</h1>
+    <p>I came from the place where you don’t need to talk all the time.</p>
+    <a href="{{ url_for('index') }}" class="btn">Get Started</a>
+
+    <footer>
+        Speak with hands and connect with hearts.
+    </footer>
+</body>
+</html>
